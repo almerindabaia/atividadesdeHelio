@@ -1,0 +1,21 @@
+package javaapplication23;
+
+import javax.swing.JOptionPane;
+public class JavaApplication23 {
+
+ 
+    public static void main(String[] args) {
+   String comprimentosombra,distancia;
+    double comprimentosombra1,distancia1,altura;   
+          distancia= JOptionPane.showInputDialog("Digite a distância entre o topo do prédio e  a sombra");
+          distancia1= Double.parseDouble(distancia);
+          comprimentosombra = JOptionPane.showInputDialog("Digite o comprimento da sombra do prédio:");
+           comprimentosombra1 = Double.parseDouble(comprimentosombra);
+
+         altura = (comprimentosombra1* distancia1) / comprimentosombra1;
+
+       
+        JOptionPane.showMessageDialog(null, "A altura do prédio é: " + altura);
+    }
+}
+

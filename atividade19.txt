@@ -1,0 +1,23 @@
+package javaapplication19;
+
+import javax.swing.JOptionPane;
+public class JavaApplication19 {
+
+ 
+    public static void main(String[] args) {
+        String galinhas;
+        int numerogalinhas,custo;
+        galinhas = JOptionPane.showInputDialog("Digite o número de galinhas:");
+         numerogalinhas = Integer.parseInt(galinhas);
+
+        // Definir o custo por galinha em chips
+        custo = numerogalinhas * 11;
+
+        // Exibir os resultados
+        JOptionPane.showMessageDialog(null, "Gastos com chips para as galinhas" + custo);
+    }
+}
+   
+  
+    
+  

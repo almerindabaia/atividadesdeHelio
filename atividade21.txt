@@ -1,0 +1,41 @@
+import javax.swing.JOptionPane;
+public class JavaApplication21 {
+
+ 
+    public static void main(String[] args) {
+    
+        String quantidade300,quantidade600, quantidade2;
+        int quantidade300ml,quantidade600ml,quantidade2L;
+        double l300ml,l600ml,l2,total300ml ,total600ml,total2l;
+        quantidade300 = JOptionPane.showInputDialog("Digite a quantidade de refrigerantes de 300 ml");
+         quantidade300ml = Integer.parseInt(quantidade300);
+        quantidade600 = JOptionPane.showInputDialog("Digite a quantidade de refrigerantes de 600 m:");
+        quantidade600ml = Integer.parseInt(quantidade600);
+        quantidade2 = JOptionPane.showInputDialog("Digite a quantidade de refrigerantes de 2 litros");
+        quantidade2L = Integer.parseInt(quantidade2);
+        l300ml = 0.3;  
+        l600ml = 0.6; 
+        l2 = 2.0;    
+
+        total300ml = quantidade300ml * l300ml;
+        total600ml = quantidade600ml * l600ml;
+        total2l = quantidade2L * l2;
+
+        // Exibir os resultados
+        JOptionPane.showMessageDialog(null, "Total de  refrigerantes de 300 ml " + total300ml + " litros");
+        JOptionPane.showMessageDialog(null, "Total de refrigerantes  de 600 ml " + total600ml + " litros");
+        JOptionPane.showMessageDialog(null, "Total de refrigerantes de 2 litros " + total2l + " litros");
+    }
+}
+
+    
+
+
+
+   
+
+   
+  
+    
+  
+    

@@ -1,0 +1,23 @@
+package javaapplication20;
+
+import javax.swing.JOptionPane;
+public class JavaApplication20{
+
+ 
+    public static void main(String[] args) {
+    
+      String novelos,quantidade;
+       int novelos1,quantidade1,gasto;
+         novelos= JOptionPane.showInputDialog("Diga a quantidade de novelos necessários para fazer uma blusas");
+         novelos1= Integer.parseInt(novelos);
+        quantidade= JOptionPane.showInputDialog("Digite a quantidade de blusas a serem feitas:");
+        quantidade1 = Integer.parseInt(quantidade);
+
+        gasto = novelos1* quantidade1;
+
+        JOptionPane.showMessageDialog(null, "Quantidade total de novelos gastos " + gasto);
+    }
+}
+
+
+   

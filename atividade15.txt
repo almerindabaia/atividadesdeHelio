@@ -1,0 +1,29 @@
+package javaapplication77;
+
+import javax.swing.JOptionPane;
+public class JavaApplication77 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        double contac,op6;
+        int contar,op1,op2,op3,op4,op5;
+        contar=Integer.parseInt(JOptionPane.showInputDialog(null,"digite o valor em reais da conta"));
+        contac=Double.parseDouble(JOptionPane.showInputDialog(null,"digite o valor da conta em centavos"));
+  
+        op1=contar/3;
+        op2=contar%3;
+        op3=op2/3;
+        op4=op1+op3;
+        op5=op2%3;
+        op6=op1+op3+op5+contac;
+        
+    
+      JOptionPane.showMessageDialog(null,"André e Carlos pagam "+op4+" cada e Felipe paga "+op6);
+     
+          
+
+  }
+    
+}

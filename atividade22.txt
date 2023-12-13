@@ -1,0 +1,28 @@
+package javaapplication22;
+
+import javax.swing.JOptionPane;
+public class JavaApplication22 {
+
+ 
+    public static void main(String[] args) {
+    String valor5,valor10,valor25,valor50,valor1;
+    int centavos5,centavos10,centavos25,centavos50,centavos1;
+    double total;
+        valor5 = JOptionPane.showInputDialog("Digite a quantidade de moedas de 5 centavos");
+        centavos5= Integer.parseInt(valor5);
+        valor10= JOptionPane.showInputDialog("Digite a quantidade de moedas de 10 centavos");
+        centavos10 = Integer.parseInt(valor10);
+        valor25 = JOptionPane.showInputDialog("Digite a quantidade de moedas de 25 centavos");
+        centavos25 = Integer.parseInt(valor25);
+        valor50 = JOptionPane.showInputDialog("Digite a quantidade de moedas de 50 centavos");
+        centavos50 = Integer.parseInt(valor50);
+        valor1= JOptionPane.showInputDialog("Digite a quantidade de moedas de 1 real");
+        centavos1 = Integer.parseInt(valor1);
+
+        total = (centavos5 * 0.05) +(centavos10 * 0.10) +(centavos25 * 0.25) +  (centavos50 * 0.50) +(centavos1 * 1.0);
+                                  
+                                
+
+        JOptionPane.showMessageDialog(null, "O valor total em reais é " +total);
+    }
+}

@@ -1,0 +1,27 @@
+package javaapplication18;
+
+import javax.swing.JOptionPane;
+public class JavaApplication18{
+
+     public static void main(String[] args) {
+       
+       String horasnor,horasexr;
+       double horasn,horasex, valonormal,valoextra, salariob,desconto,salariototal;
+        horasnor= JOptionPane.showInputDialog("Digite as horas de trabalho normais:");
+        horasn = Double.parseDouble(horasnor);
+        horasexr = JOptionPane.showInputDialog("Digite as horas de trabalho extras:");
+        horasex= Double.parseDouble(horasexr);
+        valonormal = 10;
+        valoextra = 15;
+        salariob = (horasn* valonormal) + (horasex * valoextra);
+        desconto = salariob * 0.10;
+        salariototal= salariob - desconto;
+
+
+        JOptionPane.showMessageDialog(null, "Salário Bruto" + salariototal+" "+ "Desconto de Imposto" + desconto+"\n"+"Salário Total" + salariob);
+        
+  
+    }
+}
+  
+    

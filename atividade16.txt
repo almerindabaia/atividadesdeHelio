@@ -1,0 +1,26 @@
+package javaapplication78;
+
+import javax.swing.JOptionPane;
+public class JavaApplication78 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String quantidadedehamburguer;
+         int quantidade,queijo,presunto,hamburguer;
+         quantidadedehamburguer = JOptionPane.showInputDialog("Digite a quantidade de hamburgueres");
+        quantidade = Integer.parseInt(quantidadedehamburguer);
+
+       
+        queijo=quantidade* 50; 
+        presunto = quantidade*50;
+        hamburguer = quantidade* 100; 
+
+    
+        JOptionPane.showMessageDialog(null, "Quantidade de queijo" + queijo+ " g");
+        JOptionPane.showMessageDialog(null, "Quantidade de presunto necessária: " + presunto + " g");
+        JOptionPane.showMessageDialog(null, "Quantidade de hambúrguer necessária: " + hamburguer + " g");
+    }
+}
+

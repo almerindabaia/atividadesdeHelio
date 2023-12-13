@@ -1,0 +1,24 @@
+package javaapplication17;
+
+import javax.swing.JOptionPane;
+public class JavaApplication17 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    String temperaturaca;   
+    double temperaturac,temperaturaf;
+
+ 
+        temperaturaca = JOptionPane.showInputDialog("Digite a temperatura em Celsius");
+        temperaturac= Double.parseDouble( temperaturaca);
+
+        temperaturaf= 1.8*temperaturac+32;
+
+        JOptionPane.showMessageDialog(null, "A temperatura em Fahrenheit e " + temperaturaf);
+   
+
+  
+    }
+}

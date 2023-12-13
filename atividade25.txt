@@ -1,0 +1,23 @@
+package javaapplication25;
+
+import javax.swing.JOptionPane;
+public class JavaApplication25 {
+
+ 
+    public static void main(String[] args) {
+       String raio,altura;
+       double raio1,altura1,volume;
+      
+        raio= JOptionPane.showInputDialog("Digite o raio da base do cilindro em metros");
+        raio1 = Double.parseDouble(raio);
+        altura = JOptionPane.showInputDialog("Digite a altura em metros");
+        altura1 = Double.parseDouble(altura);
+
+ 
+         volume = 3.14 * Math.pow(raio1, 2) * altura1;
+
+
+        JOptionPane.showMessageDialog(null, "ovolume da caixa d'água é" + volume + " metros cúbicos");
+    }
+}
+
